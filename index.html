@@ -7,7 +7,7 @@
       name="description"
       content="Dinesh Kumar — Developer portfolio showcasing projects, skills, and experience."
     />
-    <title> Portfolio</title>
+    <title>Dinesh Kumar — Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#top">Skip to content</a>
+
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
     <div class="grain" aria-hidden="true"></div>
     <div class="orb orb-one" aria-hidden="true"></div>
     <div class="orb orb-two" aria-hidden="true"></div>
@@ -29,7 +32,7 @@
         <a href="#projects">Work</a>
         <a href="#contact">Contact</a>
       </nav>
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
         <span></span>
         <span></span>
       </button>
@@ -69,15 +72,14 @@
         </div>
 
         <div class="hero-visual reveal">
-    <div class="photo-frame">
-    <img src="./ChatGPT Image May 10, 2026, 09_26_19 PM.png" alt="Profile">
-
-    <div class="photo-badge">
-        <span class="badge-dot"></span>
-        Available for Work
-    </div>
-</div>
-</div>
+          <div class="photo-frame">
+            <img src="./ChatGPT Image May 10, 2026, 09_26_19 PM.png" alt="Portrait of Dinesh Kumar" width="900" height="1184" />
+            <div class="photo-badge">
+              <span class="badge-dot"></span>
+              Available for Work
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="about" class="about section">
@@ -109,7 +111,6 @@
             <h3>Frontend</h3>
             <ul>
               <li>HTML / CSS / JavaScript</li>
-             
               <li>Responsive UI Design</li>
               <li>Animation &amp; Motion</li>
             </ul>
@@ -118,7 +119,7 @@
             <h3>Backend</h3>
             <ul>
               <li>Database Design</li>
-              
+              <li>REST API Integration</li>
             </ul>
           </article>
           <article class="skill-card reveal">
@@ -127,110 +128,95 @@
               <li>Git &amp; GitHub</li>
               <li>Figma</li>
               <li>VS Code / Cursor</li>
-            
             </ul>
           </article>
         </div>
       </section>
 
       <section id="projects" class="projects section">
-  <div class="section-head reveal">
-    <p class="eyebrow">Selected Work</p>
-    <h2>Projects that define my craft.</h2>
-  </div>
-
-  <div class="project-list">
-
-    <!-- Project 1 -->
-    <a
-      href="https://imaginative-gaufre-d64d00.netlify.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="project-link"
-    >
-      <article class="project-card reveal">
-
-        <div class="project-meta">
-          <span>01</span>
-          <span>Music App</span>
+        <div class="section-head reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects that define my craft.</h2>
         </div>
 
-        <h3>Music Dashboard</h3>
+        <div class="project-list">
+          <a
+            href="https://bus-booking1.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            <article class="project-card reveal">
+              <div class="project-meta">
+                <span>01</span>
+                <span>Bus Booking App</span>
+              </div>
+              <h3>BusGo</h3>
+              <p>
+                A responsive bus booking web app that lets users search routes,
+                pick seats, and complete bookings through a clean, intuitive
+                interface.
+              </p>
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </article>
+          </a>
 
-        <p>
-          A modern music player with playlist management,
-          smooth audio controls, responsive design, and an
-          elegant user interface for a seamless listening
-          experience.
-        </p>
+          <a
+            href="https://webecommercs.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            <article class="project-card reveal">
+              <div class="project-meta">
+                <span>02</span>
+                <span>E-Commerce</span>
+              </div>
+              <h3>LUMEN E-Commerce Website</h3>
+              <p>
+                LUMEN is a modern, responsive e-commerce website that enables
+                users to browse products, manage their shopping cart, and
+                complete purchases through a simple and user-friendly interface.
+              </p>
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </article>
+          </a>
 
-        <div class="tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
+          <a
+            href="https://foodshubs.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            <article class="project-card reveal">
+              <div class="project-meta">
+                <span>03</span>
+                <span>Food Order</span>
+              </div>
+              <h3>FoodHub</h3>
+              <p>
+                FoodHub is a modern and responsive food ordering website that
+                allows users to explore menus, add items to the cart, and order
+                delicious meals through a simple and user-friendly interface.
+              </p>
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </article>
+          </a>
         </div>
+      </section>
 
-      </article>
-    </a>
-
-    <!-- Project 2 -->
-      <a
-      href="https://webecommercs.netlify.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="project-link"
-    >
-    <article class="project-card reveal">
-
-      <div class="project-meta">
-        <span>02</span>
-        <span>E-Commerce</span>
-      </div>
-
-      <h3>LUMEN E-Commerce Website</h3>
-
-      <p>
-        LUMEN is a modern, responsive e-commerce website that enables users to browse products, manage their shopping cart, and complete purchases through a simple and user-friendly interface.
-      </p>
-
-      <div class="tags">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>Javascript</span>
-      </div>
-
-    </article></a>
-
-    <!-- Project 3 -->
-      <a
-      href="https://foodshubs.netlify.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="project-link"
-    >
-    <article class="project-card reveal">
-
-      <div class="project-meta">
-        <span>03</span>
-        <span>Food Order</span>
-      </div>
-
-      <h3>FoodHub</h3>
-
-      <p>
-       FoodHub is a modern and responsive food ordering website that allows users to explore menus, add items to the cart, and order delicious meals through a simple and user-friendly interface.
-      </p>
-
-      <div class="tags">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>Javascript</span>
-      </div>
-
-    </article></a>
-
-  </div>
-</section>
       <section id="contact" class="contact section">
         <div class="contact-panel reveal">
           <p class="eyebrow">Contact</p>
@@ -240,7 +226,6 @@
             Drop a message and I'll get back to you soon.
           </p>
           <div class="contact-links">
-            
             <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
             <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
           </div>
@@ -255,4 +240,3 @@
     <script src="./script.js"></script>
   </body>
 </html>
-
